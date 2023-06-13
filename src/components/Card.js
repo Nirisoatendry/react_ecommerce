@@ -7,7 +7,7 @@ import RightArrow from "../assets/right-arrow.svg"
 export default function Card({title,datas}) {
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <img src={LeftArrow} alt="prevArrow" {...props} />
+    <img src={LeftArrow} alt="prevArrow" {...props} />  
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
