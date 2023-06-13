@@ -1,0 +1,2 @@
+Dans index.js , il y a le composant <app /> dans le composant <React.StrictMode> ( composant special de React qui permet d'activer des vérifications supplémentaires et des avertissementspour detecter les problèmes potentiesl dans l'appli)
+reportWebVitals permet de surveiller et d'optimiser les performances de l'appli React
