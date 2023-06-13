@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
 
-
-
-
-
 export default class Explore extends Component {
     render() {
         return (
@@ -19,7 +15,7 @@ export default class Explore extends Component {
                     </div>
                 )})}
                 </div>
-               
+{/* La clé key est utilisée pour fournir une clé unique à chaque élément dans la liste  */}
             </div>
         )
     }

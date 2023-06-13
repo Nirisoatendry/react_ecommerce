@@ -4,10 +4,6 @@ import Slider from "react-slick";
 import LeftArrow from "../assets/left-arrow.svg"
 import RightArrow from "../assets/right-arrow.svg"
  
-
-
-
-
 export default function Card({title,data}) {
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (

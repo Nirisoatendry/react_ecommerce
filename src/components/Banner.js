@@ -1,40 +1,39 @@
 import React, { Component } from 'react'
-import Typewriter from 'typewriter-effect';
-
-
-
+import Typewriter from 'typewriter-effect'; // bibliotheque pour creer des effets de frappe de texte
+import logo from "../assets/image/logo.png"
 export default class Banner extends Component {
-
-
 
     render() {
         return (
       <header class="header">
       <div class="header__logo-box">
       <div class="header__logo-box-start">
-        <img class="header__logo" src="https://www.wanderon.in/wanderon-logo.svg" alt="Logo" />
+        <img class="header__logo" src={logo} alt="Logo" />
         </div>
 
       <div class="header__logo-box-mid">
         <img src="https://www.wanderon.in/svg/nav/phone.svg" alt="phone" />
-          <h1>+91-8887756502</h1>
+          <h1>+261 34 343 34</h1>
         </div>
 
       <div class="header__logo-box-last">
-          <h1>TRENDING TRIPS</h1>
-          <h1>WORKCATIONS</h1>
-          <h1>BLOGS</h1>
+          
+          <h1>Catégories</h1>
+          <h1>Panier</h1>
+          <h1>Profil</h1>
+          <h1>Se connecter</h1>
+          <h1>S'inscrire</h1>
         </div>
       </div>
 
       <div class="header__text-box">
         <h1 >
-         India's Coolest Travel Community
+           Trouvez tout ce dont vous avez besoin 
         </h1>
         <p> 
           <Typewriter
         options={{
-    strings: [' Spreading Happiness', ' Connecting People'," Creating Memories"," Creating Stories"," Fulfilling Adventure"],
+    strings: [' Vêtements et accessoires', 'Electronique'," Maison et jardin"," Beauté et santé"," Sports et loisirs","Auto et moto","Livre et médias","Alimentation et boissons"],
     autoStart: true,
     loop: true,
   }}
@@ -54,7 +53,7 @@ export default class Banner extends Component {
 </p>
 
         <div className="header__text-box-inputContainer">
-          <input placeholder="Where do you wanna go?"/>
+          <input placeholder="Rechercher"/>
           <div className="header__text-box-inputContainer-imgConatiner">
             <img src="https://www.wanderon.in/svg/search.svg" alt="phone" />
           </div>
@@ -62,7 +61,7 @@ export default class Banner extends Component {
           <div>
 
 {/* card */}
- <div className="header__text-box-card_container">
+ {/* <div className="header__text-box-card_container">
             <div className="header__text-box-card_container--inner">
              {this.props.data.map((item,index) =>{return(
                     <div key={index} className="header__text-box-card_container--inner-card">
@@ -73,7 +72,7 @@ export default class Banner extends Component {
                 )})}
                 </div>
                
-            </div>
+            </div> */}
         </div>
       </div>
     </header>
