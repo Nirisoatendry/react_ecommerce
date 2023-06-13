@@ -4,11 +4,7 @@ import Slider from "react-slick";
 import LeftArrow from "../assets/left-arrow.svg"
 import RightArrow from "../assets/right-arrow.svg"
  
-
-
-
-
-export default function Card({title,data}) {
+export default function Card({title,datas}) {
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <img src={LeftArrow} alt="prevArrow" {...props} />
@@ -25,32 +21,20 @@ export default function Card({title,data}) {
       slidesToScroll: 1,
       initialSlide: 0,
       prevArrow: <SlickArrowLeft />,
-    nextArrow: <SlickArrowRight />,
+      nextArrow: <SlickArrowRight />,
     };
     return (
      <div className="card__container">
    <h1>{title}</h1>
  <Slider {...settings} className="card__container--inner">
-          {data.map((item, index) => {
+          {datas.map((data) => {
             return (
               <div
               className="card__container--inner--card"
-              key={index}>
-                
-
-                <img src={item.url} alt="hero_img" />
-              
-                <div className="card__container--inner--card--date_time">
-                  <img src="https://www.wanderon.in/svg/clock.svg" alt="time" />
-                  <p>4D-5D</p>
-
-                  <img src="https://www.wanderon.in/svg/map-pin.svg" alt="location" style={{marginLeft:10}}/>
-                  <p>Delhi</p>
-                </div>
-
-
-                <h2>Meghalaya Backpacking</h2>
-                <p>starts at <span>₹15,999/-</span></p>
+              key={data.id}>
+                <img src={data.imagePath} alt="hero_img" />
+                <h2>{data.nom}</h2>
+                <p><span>AR{data.prix}</span></p>
               </div>
             );
           })}
