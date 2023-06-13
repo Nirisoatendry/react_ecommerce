@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "./components/Card";
-import Explore from "./components/Explore";
+//import Explore from "./components/Explore";
 import Banner from "./components/Banner";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

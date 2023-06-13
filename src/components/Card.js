@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import LeftArrow from "../assets/left-arrow.svg"
 import RightArrow from "../assets/right-arrow.svg"
  
-export default function Card({title,data}) {
+export default function Card({title,datas}) {
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <img src={LeftArrow} alt="prevArrow" {...props} />  

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 export default class Explore extends Component {
     render() {
-        return (
+        return (  
             <div className="explore__container">
                 <h1>
                    {this.props.title}
