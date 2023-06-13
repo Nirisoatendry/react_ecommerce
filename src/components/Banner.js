@@ -22,12 +22,13 @@ export default class Banner extends Component {
           <h1>Panier</h1>
           <h1>Profil</h1>
           <h1>Se connecter</h1>
+          <h1>S'inscrire</h1>
         </div>
       </div>
 
       <div class="header__text-box">
         <h1 >
-        Trouvez tout ce dont vous avez besoin 
+           Trouvez tout ce dont vous avez besoin 
         </h1>
         <p> 
           <Typewriter
@@ -60,7 +61,7 @@ export default class Banner extends Component {
           <div>
 
 {/* card */}
- <div className="header__text-box-card_container">
+ {/* <div className="header__text-box-card_container">
             <div className="header__text-box-card_container--inner">
              {this.props.data.map((item,index) =>{return(
                     <div key={index} className="header__text-box-card_container--inner-card">
@@ -71,7 +72,7 @@ export default class Banner extends Component {
                 )})}
                 </div>
                
-            </div>
+            </div> */}
         </div>
       </div>
     </header>
